@@ -1,0 +1,74 @@
+if (hourStart.getValue() != null && minStart.getValue() != null && hourFin.getValue() != null && minFin.getValue() != null &&
+        Name.getText() != null && datePicker.getValue() != null && priorityCB.getValue() != null && statusCB.getValue() != null && dataList.checkNameGeneral(Name.getText()) && categoryCB.getValue() != null) {
+            generalWork = new GeneralWorks(Name.getText(), datePicker.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                    hourStart.getValue() + ":" + minStart.getValue(),
+                    hourFin.getValue() + ":" + minFin.getValue(),
+                    priorityCB.getValue(), statusCB.getValue(), categoryCB.getValue());
+
+            if (hourStart.getValue() == hourFin.getValue()){
+                if (minStart.getValue() < minFin.getValue()){
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure?", ButtonType.YES, ButtonType.NO);
+                    alert.setTitle("Please check your data!!!");
+                    alert.showAndWait();
+                    if (alert.getResult().getText().equals("Yes")) {
+                        System.out.println(generalWork.toString());
+                        dataList.addGenWork(generalWork);
+
+                        workDataSource.setData(dataList);
+//                        warningLabel.setText(null);
+                        showGeneralWorksData();
+                    }
+                }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("Error!!!");
+                    alert.setContentText("Please complete the correct time!!!");
+                    alert.show();
+                }
+            }
+            else if (hourStart.getValue() < hourFin.getValue()){
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure?", ButtonType.YES, ButtonType.NO);
+                alert.setTitle("Please check your data!!!");
+                alert.showAndWait();
+                if (alert.getResult().getText().equals("Yes")) {
+                    System.out.println(generalWork.toString());
+                    dataList.addGenWork(generalWork);
+
+                    workDataSource.setData(dataList);
+//                    warningLabel.setText(null);
+                    showGeneralWorksData();
+                }
+            }
+            else {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText("Error!!!");
+                alert.setContentText("Please complete the correct time!!!");
+                alert.show();
+            }
+        }
+
+        else if (hourStart.getValue() == null && minStart.getValue() == null && hourFin.getValue() == null && minFin.getValue() == null &&
+                Name.getText() == null && datePicker.getValue() == null &&
+                priorityCB.getValue() == null &&
+                statusCB.getValue() == null &&
+                categoryCB.getValue() == null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Error!!!");
+            alert.setContentText("Please complete all information!!!");
+            alert.show();
+        }
+
+        else if (!(dataList.checkNameGeneral(Name.getText()))){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Error!!!");
+            alert.setContentText("Please enter new name!!!");
+            alert.show();
+        }
+
+        else{
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText("Error!!!");
+            alert.setContentText("Please complete all information!!!");
+            alert.show();
+        }

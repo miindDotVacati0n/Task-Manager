@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: EBC1CD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.home.HomeController">
+   <children>
+      <ImageView fitHeight="866.0" fitWidth="541.0" layoutX="14.0" layoutY="158.0">
+         <image>
+            <Image url="@Image/wbb4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="551.0" fitWidth="541.0" layoutX="433.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/pro1_kk.jpg" />
+         </image></ImageView>
+      <Label layoutX="486.0" layoutY="646.0" prefHeight="53.0" prefWidth="325.0" text="นาย เทพทัต ตั้งสัจจะกุล" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="707.0" text="ชื่อเล่น มายด์" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="548.0" layoutY="777.0" prefHeight="53.0" prefWidth="201.0" text="6210451195" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="597.0" layoutY="830.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="99.0" prefWidth="104.0" style="-fx-background-radius: 150; -fx-background-color: 008b8b;" text="BACK">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.56" color="#69cbee" height="45.88" radius="18.552500000000002" width="30.33" />
+         </effect></Button>
+   </children>
+</AnchorPane>

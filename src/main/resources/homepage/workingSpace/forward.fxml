@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.home.ForwardWorksController">
+   <children>
+      <ImageView fitHeight="952.0" fitWidth="1280.0" layoutX="-5.0" layoutY="134.0">
+         <image>
+            <Image url="@../../Image/wbb6.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1086.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Label layoutX="524.0" layoutY="58.0" text="Forward Works">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="forwardTableView" layoutX="99.0" layoutY="193.0" prefHeight="461.0" prefWidth="485.0" />
+      <Label layoutX="673.0" layoutY="255.0" text="Forward leader" />
+      <Label layoutX="673.0" layoutY="308.0" text="Day to assign" />
+      <Label layoutX="673.0" layoutY="193.0" text="Work name" />
+      <Label layoutX="670.0" layoutY="361.0" text="Time to assign" />
+      <Label layoutX="670.0" layoutY="413.0" text="Priority" />
+      <Label layoutX="871.0" layoutY="413.0" text="Status" />
+      <TextField fx:id="forwardName" layoutX="807.0" layoutY="188.0" />
+      <TextField fx:id="leaderWork" layoutX="807.0" layoutY="250.0" />
+      <DatePicker fx:id="datePickerFW" layoutX="807.0" layoutY="303.0" prefHeight="31.0" prefWidth="187.0" />
+      <ChoiceBox fx:id="priorityFW" layoutX="728.0" layoutY="408.0" prefHeight="31.0" prefWidth="131.0" />
+      <ChoiceBox fx:id="statusFW" layoutX="926.0" layoutY="408.0" prefHeight="31.0" prefWidth="118.0" />
+      <Button fx:id="submit" layoutX="760.0" layoutY="512.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+      <Button fx:id="update" layoutX="857.0" layoutY="512.0" mnemonicParsing="false" onAction="#handleUpdateButton" text="Update" />
+      <Separator layoutX="630.0" layoutY="193.0" orientation="VERTICAL" prefHeight="461.0" prefWidth="10.0" style="-fx-background-color: red;" />
+      <ChoiceBox fx:id="hourStart" layoutX="807.0" layoutY="356.0" prefHeight="31.0" prefWidth="51.0" />
+      <ChoiceBox fx:id="minStart" layoutX="875.0" layoutY="356.0" prefHeight="31.0" prefWidth="51.0" />
+      <ChoiceBox fx:id="categoryFW" layoutX="767.0" layoutY="460.0" prefHeight="31.0" prefWidth="131.0" />
+      <Label layoutX="673.0" layoutY="465.0" text="Category" />
+   </children>
+</AnchorPane>

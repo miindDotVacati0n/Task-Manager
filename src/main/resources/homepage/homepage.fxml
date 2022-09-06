@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: fd9941;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.home.HomePageController">
+   <children>
+      <ImageView fitHeight="760.0" fitWidth="1282.0" layoutY="264.0">
+         <image>
+            <Image url="@../Image/wbb4.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="374.0" orientation="VERTICAL" prefHeight="1024.0" prefWidth="7.0" style="-fx-background-color: #000000;" />
+      <Separator layoutY="74.0" prefHeight="7.0" prefWidth="375.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="46.0" layoutY="6.0" text="Working Spaces">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="94.0" layoutY="143.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="207.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="243.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="309.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="347.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="413.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="454.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="518.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Button layoutX="115.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleGeneralWorksButton" text="General Works">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="117.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleWeeklyButton" text="Weekly Works">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="113.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleForwardButton" text="Forward Works">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleProjectButton" text="Project">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="288.0" layoutY="153.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="153.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="285.0" layoutY="255.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="255.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="285.0" layoutY="359.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="359.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="285.0" layoutY="465.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="465.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="374.0" layoutY="74.0" prefHeight="7.0" prefWidth="906.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="669.0" layoutY="6.0" text="UDairy Application">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="352.0" text="Welcome to working area">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="149.0" layoutY="864.0" mnemonicParsing="false" onAction="#handleBackButton" text="Creator">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="136.0" layoutY="851.0" prefHeight="7.0" prefWidth="117.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="138.0" layoutY="912.0" prefHeight="7.0" prefWidth="117.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="250.0" layoutY="861.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="7.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="133.0" layoutY="861.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="7.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="659.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="718.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="288.0" layoutY="667.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="91.0" layoutY="667.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Button layoutX="141.0" layoutY="766.0" mnemonicParsing="false" onAction="#handleManualButton" text="Manual">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="94.0" layoutY="756.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="95.0" layoutY="816.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="763.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="285.0" layoutY="763.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Button layoutX="142.0" layoutY="670.0" mnemonicParsing="false" onAction="#handleAllWorkButton" text="All Works">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="94.0" layoutY="565.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="95.0" layoutY="623.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="288.0" layoutY="572.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Separator layoutX="94.0" layoutY="572.0" orientation="VERTICAL" prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #000000;" />
+      <Button layoutX="140.0" layoutY="576.0" mnemonicParsing="false" onAction="#handleCategoryButton" text="Category">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
